@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobYestWORDConsole", "JobYestWORDConsole.csproj", "{76ECF246-2502-4B8A-9B1C-6D5BEEA7A051}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76ECF246-2502-4B8A-9B1C-6D5BEEA7A051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76ECF246-2502-4B8A-9B1C-6D5BEEA7A051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76ECF246-2502-4B8A-9B1C-6D5BEEA7A051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76ECF246-2502-4B8A-9B1C-6D5BEEA7A051}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BF68451-9C4D-4A7A-AB97-80456ADA783A}
+	EndGlobalSection
+EndGlobal
