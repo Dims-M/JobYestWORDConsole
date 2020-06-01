@@ -29,12 +29,61 @@ namespace JobYestWORDConsole
             //GemBoxDocumentTest();
             // GetBoxDoc("Writing.docx");
             // GetBoxDocPDF("Writing.docx");
-            GetBoxCreateWord();
+            // GetBoxCreateWord();
+            // GetBoxCreateWord2(); // Метод работает!!!!!
+
+            //Печать на принтере нарямую из кода
+            // JobPrintDoc.TestPrint();
+
+            // JobPrintDoc.ConverdToBase64String();
+
+            string pathFolder = @"C:\\1\\";
+            string videoUrl = "https://www.youtube.com/watch?v=lzm5llVmR2E";
+            string nameFile = "test";
+
+            RabotaYoutube.SaveMP3(pathFolder, videoUrl, nameFile);
+
 
             Console.WriteLine("Для выхода нажмите любую клавишу!");
             Console.ReadKey();
 
         }
+
+        /// <summary>
+        /// Тестовой метод 2
+        /// </summary>
+         static void GetBoxCreateWord2()
+        {
+            string[] temZnach = new string[] { "Gthdjt", "Массив представляет", "мы можем" };
+            string temp = "";
+            // создание ссылок дирикторий(папок для картинки). Корневая папка
+            var originalDirectory = new DirectoryInfo(string.Format(@"~Archive_Documents\\Uploads"));
+
+            //Бесплатное Лицензия
+            ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+
+            // Создание нового дока.
+            var document = new DocumentModel();
+            try
+            {
+                for (int i = 0; i < temZnach.Length; i++)
+                {
+                    temp += (temZnach[i] + Environment.NewLine);
+                    document.Content.LoadText(temp);
+
+                };
+
+                document.Save("Archive_Documents/TestSaveDoc.docx");
+               // document.Save("`Archive_Documents/TestSaveDoc.pdf");
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ошибка при работе" + ex);
+            }
+        }
+
+
         /// <summary>
         /// Тестовой вариант
         /// </summary>
